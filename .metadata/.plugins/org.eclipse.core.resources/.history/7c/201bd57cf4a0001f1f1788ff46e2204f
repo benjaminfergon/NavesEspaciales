@@ -1,0 +1,5 @@
+package com.naves.security;
+
+public class SecurityConfig {
+
+}

@@ -1,0 +1,31 @@
+package com.naves.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import com.naves.Exceptions.SpaceShipNotFoundException;
+import com.naves.model.SpaceShip;
+import com.naves.repository.SpaceShipRepository;
+
+@Service
+public class SpaceShipService {
+
+	@Autowired
+	private SpaceShipRepository spaceShipRep;
+
+	public Page<SpaceShip> getShipsByName(String name, int page, int size) {
+		Pageable pageable = PageRequest.of(page, size);
+		return spaceShipRep.findByNameContaining(name, pageable);
+	}
+
+	public SpaceShip getShipById(Long id) {
+	    return spaceShipRep.findById(id)
+	        .orElseThrow(() -> new SpaceShipNotFoundException(id));
+	}
+
+}

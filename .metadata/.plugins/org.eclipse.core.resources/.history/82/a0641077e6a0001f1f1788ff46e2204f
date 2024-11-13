@@ -1,0 +1,5 @@
+package com.naves.Exceptions;
+
+public class SpaceShipNotFoundException extends RuntimeException {
+
+}

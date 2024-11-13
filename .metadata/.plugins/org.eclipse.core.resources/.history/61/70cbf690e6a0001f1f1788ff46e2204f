@@ -1,0 +1,9 @@
+package com.naves.Exceptions;
+
+public class SpaceShipNotFoundException extends RuntimeException {
+	
+	public SpaceShipNotFoundException(Long id) {
+		super("SpaceShip not Found with id: " + id);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.naves.repository;
+
+public class SpaceShipRepository {
+
+}

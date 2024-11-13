@@ -1,0 +1,5 @@
+package com.naves.model;
+
+public class SpaceShip {
+
+}

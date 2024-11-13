@@ -1,0 +1,14 @@
+package com.naves.model;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class SpaceShip {
+	private Long id;
+	private String name;
+	private String series;
+	private String type;
+	
+	
+
+}
