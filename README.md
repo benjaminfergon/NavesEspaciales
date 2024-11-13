@@ -1,6 +1,4 @@
 
-markdown
-Copiar código
 # 🚀 Proyecto de Mantenimiento de Naves Espaciales
 
 ¡Bienvenidos a bordo del proyecto más estelar de todos! Este repositorio contiene una API futurista para gestionar naves espaciales de tus series y películas favoritas. Sí, ¡finalmente puedes controlar y administrar naves sin dejar tu consola de desarrollador! 🛸
